@@ -4,10 +4,6 @@ import { selectContacts, selectNameFilter } from "../../redux/selectors";
 import Contact from "../Contact/Contact";
 import css from "./ContactList.module.css";
 
-// const visibleContacts = contacts.filter((contact) =>
-//   contact.name.toLowerCase().includes(inputValue.toLowerCase())
-// );
-
 const getVisibleContacts = (contacts, nameFilter) => {
   return contacts.filter((contact) =>
     contact.name.toLowerCase().includes(nameFilter.toLowerCase())
